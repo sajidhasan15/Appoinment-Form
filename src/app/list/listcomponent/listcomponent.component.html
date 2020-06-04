@@ -1,0 +1,27 @@
+<div class="listall">
+    <h1>Appoinment List</h1>
+    <div *ngFor="let appoinmentarray of appoinmentarrays " (click) = "onclick(appoinmentarray)"> 
+        <div class="box">
+            <h2>  Name :   {{appoinmentarray.fname}} 
+            <span>         {{appoinmentarray.lname}} </span></h2>
+            <p>   Email:   {{appoinmentarray.email}} </p>
+            <P>   Phone:   {{appoinmentarray.phone}}</P>
+            <P>   Address: {{appoinmentarray.address}}</P>
+            <P>   Age:     {{appoinmentarray.age}}</P>
+            <P><b>Date:</b>{{appoinmentarray.date}}</P>
+            
+            <h4>   <b>    Time Slot :  </b>
+                <div *ngIf="appoinmentarray.time == 0" >
+                  <span> 4 - 5  </span>
+                </div>
+                <div *ngIf="appoinmentarray.time == 1" >
+                    <span> 5 - 6  </span>
+                </div>
+                <div *ngIf="appoinmentarray.time == 2" >
+                    <span> 6 - 7 </span>
+                </div>
+            </h4> 
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="all">
+    <h1>  Selected Appoinment</h1>    
+    <div style="padding-left: 250px;">
+      <div *ngIf="appoinment"> 
+        <div class="box">
+            <h2> Appoinment Details</h2>
+            <h3> Name :  <span> {{appoinment.fname}}  {{appoinment.lname}} </span> </h3>
+             
+            <p>  Email : {{appoinment.email}}</p>
+            <p>  Phone : {{appoinment.phone}}</p>
+            <p>  Address : {{appoinment.address}}</p>
+            <p>  Age : {{appoinment.age}}</p>
+            <p>  Date : {{appoinment.date}}</p>
+            <p>  Time : {{appoinment.time}}</p>
+        </div>
+      </div>
+    </div>
+</div>
